@@ -1,0 +1,246 @@
+/* --- Reseteo Estilos Básicos --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #202124;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: #202124;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* --- Encabezado / Nav --- */
+header {
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-right a {
+    font-size: 13px;
+    opacity: 0.85;
+}
+
+.menu-icon {
+    background: none;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #5f6368;
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon:hover {
+    background-color: rgba(60, 64, 67, 0.08);
+}
+
+.btn-avatar {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- Contenido Principal --- */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+}
+
+/* Logo con los colores oficiales */
+.logo-container {
+    font-size: 90px;
+    font-weight: 500;
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+    user-select: none;
+}
+
+.l-blue { color: #4285F4; }
+.l-red { color: #EA4335; }
+.l-yellow { color: #FBBC05; }
+.l-green { color: #34A853; }
+
+/* Barra de Búsqueda */
+.search-form {
+    width: 100%;
+    max-width: 584px;
+    padding: 0 20px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 46px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    padding: 0 14px;
+    background-color: #fff;
+    transition: box-shadow 0.1s;
+}
+
+.search-box:hover, 
+.search-box:focus-within {
+    box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
+}
+
+.search-box input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 0 10px;
+    color: #000;
+}
+
+.search-box span {
+    color: #9aa0a6;
+    cursor: pointer;
+    user-select: none;
+}
+
+.search-box .icon-search {
+    font-size: 20px;
+}
+
+.search-box .icon-mic, 
+.search-box .icon-cam {
+    padding: 0 6px;
+    font-size: 22px;
+}
+
+/* Botones */
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+
+.btn-google {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    padding: 0 16px;
+    height: 36px;
+    cursor: pointer;
+    transition: border 0.1s, color 0.1s;
+}
+
+.btn-google:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+.btn-google:focus {
+    border: 1px solid #4285f4;
+    outline: none;
+}
+
+/* Idiomas */
+.languages {
+    font-size: 13px;
+    color: #4d5156;
+}
+
+.languages a {
+    color: #1a0dab;
+    margin-left: 5px;
+}
+
+/* --- Pie de Página --- */
+footer {
+    background-color: #f2f2f2;
+    width: 100%;
+}
+
+.footer-row {
+    display: flex;
+    padding: 15px 30px;
+    border-top: 1px solid #dadce0;
+    color: #70757a;
+}
+
+.top-row {
+    font-size: 15px;
+}
+
+.bottom-row {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.bottom-row a {
+    color: #70757a;
+    font-size: 14px;
+    margin-right: 30px;
+}
+
+.bottom-row a:last-child {
+    margin-right: 0;
+}
+
+.footer-left, .footer-right {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* --- Responsivo Básico --- */
+@media (max-width: 550px) {
+    .bottom-row {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .footer-left, .footer-right {
+        justify-content: center;
+        gap: 15px;
+    }
+    .bottom-row a {
+        margin-right: 0;
+    }
+}

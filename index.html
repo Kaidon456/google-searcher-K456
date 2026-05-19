@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Iconos de Google Material para los símbolos de la barra de búsqueda -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Encabezado / Navegación Superior -->
+    <header>
+        <nav class="nav-right">
+            <a href="#">Gmail</a>
+            <a href="#">Imágenes</a>
+            <button class="menu-icon"><span class="material-icons">apps</span></button>
+            <button class="btn-avatar">K</button>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <!-- Logo -->
+        <div class="logo-container">
+            <span class="l-blue">G</span>
+            <span class="l-red">o</span>
+            <span class="l-yellow">o</span>
+            <span class="l-blue">g</span>
+            <span class="l-green">l</span>
+            <span class="l-red">e</span>
+        </div>
+
+        <!-- Barra de Búsqueda -->
+        <form class="search-form" id="search-form">
+            <div class="search-box">
+                <span class="material-icons icon-search">search</span>
+                <input type="text" id="search-input" autocomplete="off" autofocus>
+                <span class="material-icons icon-mic" title="Buscar por voz">mic</span>
+                <span class="material-icons icon-cam" title="Buscar por imagen">photo_camera</span>
+            </div>
+
+            <!-- Botones de Acción -->
+            <div class="buttons-container">
+                <button type="submit" class="btn-google">Buscar con Google</button>
+                <button type="button" class="btn-google" id="btn-lucky">Voy a tener suerte</button>
+            </div>
+        </form>
+
+        <!-- Ofrecido por Google en... -->
+        <div class="languages">
+            Ofrecido por Google en: <a href="#">English</a>
+        </div>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <div class="footer-row top-row">
+            <span>México</span>
+        </div>
+        <div class="footer-row bottom-row">
+            <div class="footer-left">
+                <a href="#">Sobre Google</a>
+                <a href="#">Publicidad</a>
+                <a href="#">Negocios</a>
+                <a href="#">Cómo funciona la Búsqueda</a>
+            </div>
+            <div class="footer-right">
+                <a href="#">Privacidad</a>
+                <a href="#">Condiciones</a>
+                <a href="#">Preferencias</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
